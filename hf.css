@@ -1,0 +1,136 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000506;
+    color: #fff;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.nav-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul.showing {
+    display: block;
+}
+
+.ft3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #000506;
+    gap: 20px;
+    padding: 20px;
+    color: #fff;
+}
+
+.ft3 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem ;
+    border-radius: 1rem;
+}
+
+.ft3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.ft3 li{
+    padding: 0.5rem;
+}
+
+.ft3 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: color 0.3s;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position:fixed;
+        right: 0;
+        top: 4.9rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .logo-title h1 {
+        font-size: 1.5em;
+    }
+    
+    .ft3  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ft3>div{
+        border-bottom: 3px solid grey;
+        border-radius: 0;
+    }
+}

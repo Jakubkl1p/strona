@@ -1,0 +1,119 @@
+body {
+    background-color: #2d2d2d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main{
+    margin: 2rem;
+}
+
+.ceo{
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px gray solid;
+}
+
+.Traders{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px gray solid;
+}
+
+.Others{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fff;
+}
+
+.Trader, .Other{
+    flex-basis: 30%;
+}
+
+.ceo .img, .Trader .img, .Other .img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.ceo .img img, .Trader .img img, .Other .img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ceo h2, .Trader h2, .Other h2{
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ceo p, .Trader p, .Other p {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+    color: #888;
+}
+
+@media (max-width: 1200px) {
+    .Trader, .Other {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Trader, .Other {
+        flex-basis: 45%;
+    }
+
+    .ceo .img, .Trader .img, .Other .img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .ceo h2, .Trader h2, .Other h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .Traders, .Others {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Trader, .Other {
+        flex-basis: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .ceo .img, .Trader .img, .Other .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .ceo h2, .Trader h2, .Other h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .ceo .img, .Trader .img, .Other .img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .ceo h2, .Trader h2, .Other h2 {
+        font-size: 1.2em;
+    }
+
+    .ceo p, .Trader p, .Other p {
+        font-size: 0.9em;
+    }
+}
