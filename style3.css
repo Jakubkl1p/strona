@@ -2,10 +2,11 @@ body {
     background-color: #2d2d2d;
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 .ceo{
-    padding: 2rem;
+    padding-top: 2rem;
     text-align: center;
     color: #fff;
     border-bottom: 1px gray solid;
@@ -83,7 +84,7 @@ body {
     .ceo{
         padding-top: 7rem;
     }
-    
+
     .Traders, .Others {
         flex-direction: column;
         align-items: center;
