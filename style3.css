@@ -4,11 +4,8 @@ body {
     margin: 0;
 }
 
-main{
-    margin: 2rem;
-}
-
 .ceo{
+    padding: 2rem;
     text-align: center;
     color: #fff;
     border-bottom: 1px gray solid;
@@ -83,6 +80,10 @@ main{
 }
 
 @media (max-width: 768px) {
+    .ceo{
+        padding-top: 7rem;
+    }
+    
     .Traders, .Others {
         flex-direction: column;
         align-items: center;
