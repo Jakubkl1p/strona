@@ -101,6 +101,11 @@ nav ul.showing {
 }
 
 @media only screen and (max-width: 768px) {
+    header{
+        position: fixed;
+        width: 95%;
+    }
+    
     .nav-toggle {
         display: block;
     }
