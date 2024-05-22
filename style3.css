@@ -6,14 +6,14 @@ body {
 }
 
 .ceo{
-    padding-top: 2rem;
+    padding: 2rem 0;
     text-align: center;
     color: #fff;
     border-bottom: 1px gray solid;
 }
 
 .Traders{
-    margin-top: 2rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .Others{
-    margin-top: 2rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -56,7 +56,7 @@ body {
 .ceo p, .Trader p, .Other p {
     margin: 0 0 5px 0;
     font-size: 1em;
-    color: #888;
+    color: #b1b1b1;
 }
 
 @media (max-width: 1200px) {

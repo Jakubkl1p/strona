@@ -107,6 +107,7 @@ p {
     display: block;
     border: 1px solid #ffffff;
     border-radius: 1rem;
+    aspect-ratio: 1;
 }
   
 .card-title {
@@ -118,6 +119,9 @@ p {
 
 
 @media only screen and (max-width: 480px) {
+    .background-wrap{
+        background-image: url('img/autom.webp');
+    }
     .search-form {
         width: 90%;
     }
@@ -129,6 +133,9 @@ p {
 
 
 @media only screen and (max-width: 768px) {
+    .background-wrap{
+        background-image: url('img/autoq.webp');
+    }
     .features {
         flex-direction: column;
     }
